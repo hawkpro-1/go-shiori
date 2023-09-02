@@ -2,7 +2,7 @@
 FROM golang:alpine3.17 AS builder
 WORKDIR /src
 COPY . .
-RUN go build -ldflags '-s -w'
+RUN go build .
 
 # server image
 
